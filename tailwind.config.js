@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       colors: {
-        "primary-blue": "hsl(246, 80%, 60%)",
+        "primary-blue": "hsl(246, 80%, 60%, 1)",
         "light-red-work": "hsl(15, 100%, 70%)",
         "soft-blue-play": "hsl(195, 74%, 62%)",
         "light-red-study": "hsl(348, 100%, 68%)",
