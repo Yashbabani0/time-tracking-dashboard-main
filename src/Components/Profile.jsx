@@ -1,9 +1,10 @@
 import React, { useState } from "react";
 
-export default function Profile() {
-  const [activeTab, setActiveTab] = useState("Daily");
+export default function Profile({ setActiveTab }) {
+  const [activeTabLocal, setActiveTabLocal] = useState("Daily");
 
   const handleClick = (tab) => {
+    setActiveTabLocal(tab);
     setActiveTab(tab);
   };
 
@@ -28,9 +29,7 @@ export default function Profile() {
         {["Daily", "Weekly", "Monthly"].map((tab) => (
           <h5
             key={tab}
-            className={`cursor-pointer ${
-              activeTab === tab ? "text-white" : ""
-            }`}
+            className={`cursor-pointer ${activeTabLocal === tab ? "text-white" : ""}`}
             onClick={() => handleClick(tab)}
           >
             {tab}
