@@ -14,7 +14,7 @@ export default function Profile({ setActiveTab }) {
         <div className="profileImg w-[4em] md:mb-[1em]">
           <img
             className="border-[3px] border-white rounded-full"
-            src="../../assets/images/image-jeremy.png"
+            src="../../image-jeremy.png"
             alt="Profile"
           />
         </div>

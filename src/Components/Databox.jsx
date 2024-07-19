@@ -11,13 +11,13 @@ export default function Databox({ activeTab }) {
         >
           <img
             className="absolute right-[10%] top-[-5%]"
-            src={`../../assets/images/icon-${item.title.toLowerCase()}.svg`}
+            src={`../../icon-${item.title.toLowerCase()}.svg`}
             alt={`${item.title} icon`}
           />
           <div className="content bg-dark-blue w-full h-[11em] absolute bottom-0 rounded-t-2xl rounded-r-2xl">
             <div className="flex items-center justify-between px-[2em] py-[2em]">
               <h3 className="font-medium tracking-wide text-[1.2em]">{item.title}</h3>
-              <img src="../../assets/images/icon-ellipsis.svg" alt="" />
+              <img src="../../images/icon-ellipsis.svg" alt="" />
             </div>
             <div className="flex items-center justify-between px-[2em]">
               <h2 className="text-[2em] font-normal text-pale-blue">
