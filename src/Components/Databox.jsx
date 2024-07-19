@@ -11,20 +11,27 @@ export default function Databox({ activeTab }) {
         >
           <img
             className="absolute right-[10%] top-[-5%]"
-            src={`../icon-${item.title.toLowerCase()}.svg`}
+            src={`../../icon-${item.title.toLowerCase()}.svg`}
             alt={`${item.title} icon`}
           />
           <div className="content bg-dark-blue w-full h-[11em] absolute bottom-0 rounded-t-2xl rounded-r-2xl">
             <div className="flex items-center justify-between px-[2em] py-[2em]">
-              <h3 className="font-medium tracking-wide text-[1.2em]">{item.title}</h3>
-              <img src="../icon-ellipsis.svg" alt="" />
+              <h3 className="font-medium tracking-wide text-[1.2em]">
+                {item.title}
+              </h3>
+              <img src="../../icon-ellipsis.svg" alt="" />
             </div>
             <div className="flex items-center justify-between px-[2em]">
               <h2 className="text-[2em] font-normal text-pale-blue">
                 {item.timeframes[activeTab.toLowerCase()].current}hrs
               </h2>
               <p className="text-pale-blue">
-                {activeTab === "Daily" ? "Yesterday" : activeTab === "Weekly" ? "Last Week" : "Last Month"} - {item.timeframes[activeTab.toLowerCase()].previous}hrs
+                {activeTab === "Daily"
+                  ? "Yesterday"
+                  : activeTab === "Weekly"
+                  ? "Last Week"
+                  : "Last Month"}{" "}
+                - {item.timeframes[activeTab.toLowerCase()].previous}hrs
               </p>
             </div>
           </div>
