@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import profileImage from '../../src/assets/image-jeremy.png';
 
 export default function Profile({ setActiveTab }) {
   const [activeTabLocal, setActiveTabLocal] = useState("Daily");
@@ -12,11 +13,9 @@ export default function Profile({ setActiveTab }) {
     <div className="w-[23em] mt-4 h-[13em] rounded-2xl bg-dark-blue mb-[1em] md:w-[16em] md:h-[30em]">
       <div className="part1 mb-6 bg-primary-blue rounded-2xl flex items-center justify-center gap-4 h-[8em] md:h-[20em] md:flex-col md:items-start md:px-12">
         <div className="profileImg w-[4em] md:mb-[1em]">
-          <img
-            className="border-[3px] border-white rounded-full"
-            src="../../image-jeremy.png"
-            alt="Profile"
-          />
+          <div className="border-[3px] border-white rounded-full overflow-hidden">
+            <img src={profileImage} alt="Profile" className="w-full h-full object-cover"/>
+          </div>
         </div>
         <div className="profileData">
           <p className="tracking-wide text-pale-blue">Report for</p>
